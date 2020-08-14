@@ -13,6 +13,7 @@ class CreateEntryViewController: UIViewController {
     // Outlets
     @IBOutlet var createTitleTextField: UITextField!
     @IBOutlet var createEntryTextView: UITextView!
+    @IBOutlet var moodSegmentControl: UISegmentedControl!
     
     
 
@@ -31,9 +32,13 @@ class CreateEntryViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
         guard let title = createTitleTextField.text, !title.isEmpty else { return }
-        guard let entryLabel = createTitleTextField.text, !entryLabel.isEmpty else { return }
         
-        Entry(title: title, bodyText: entryLabel)
+        let entryTextView = createEntryTextView.text
+        let moodIndex = moodSegmentControl.selectedSegmentIndex
+        let mood = EntryMood.allCases[moodIndex]
+        
+        
+        Entry(title: title, bodyText: entryTextView, mood: mood)
         
         do {
             try CoreDataStack.shared.mainContext.save()

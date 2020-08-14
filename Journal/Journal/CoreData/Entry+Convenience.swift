@@ -9,7 +9,11 @@
 import Foundation
 import CoreData
 
-
+enum EntryMood: String, CaseIterable {
+    case happy
+    case ok
+    case sad
+}
 
 
 extension Entry {
@@ -17,11 +21,13 @@ extension Entry {
                                     title: String?,
                                     bodyText: String?,
                                     timestamp: Date? = Date(),
+                                    mood: EntryMood = .ok,
                                     context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
     self.init(context: context)
     self.identifier = identifier
     self.title = title
     self.bodyText = bodyText
     self.timestamp = timestamp
+    self.mood = mood.rawValue
     }
 }

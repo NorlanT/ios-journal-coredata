@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		864FC01724E36A140045226C /* Journal 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Journal 2.xcdatamodel"; sourceTree = "<group>"; };
 		867D419024E0BC7A00798180 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867D419324E0BC7A00798180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		867D419524E0BC7A00798180 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -407,9 +408,10 @@
 		867D41B424E0BFFD00798180 /* Journal.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				864FC01724E36A140045226C /* Journal 2.xcdatamodel */,
 				867D41B524E0BFFD00798180 /* Journal.xcdatamodel */,
 			);
-			currentVersion = 867D41B524E0BFFD00798180 /* Journal.xcdatamodel */;
+			currentVersion = 864FC01724E36A140045226C /* Journal 2.xcdatamodel */;
 			path = Journal.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

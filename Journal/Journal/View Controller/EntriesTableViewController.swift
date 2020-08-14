@@ -69,6 +69,12 @@ class EntriesTableViewController: UITableViewController {
         return cell
     }
     
+    // Title for Header
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        guard let sectionInfo = fetchedResultsController.sections?[section] else { return nil }
+//        return sectionInfo.name.capitalized
+//    }
+    
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
